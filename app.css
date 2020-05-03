@@ -13,6 +13,10 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.control-panel {
+    margin: 2rem 5%;
+    text-align: center;
+}
 .list {
     position: relative;
     margin: 1rem;
@@ -32,6 +36,12 @@
         color: var(--theme-color);
         font-weight: bold;
         transform: translateY(-50%);
+    }
+    .list tr {
+        transition: var(--theme-transition);
+    }
+    .list tr.hidden {
+        opacity: .2
     }
     .list td {
         padding: .5rem 1rem;
